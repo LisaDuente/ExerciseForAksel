@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="formular.css">
+        <title>Frontend for application person</title>
+    </head>
+
+    <body>
+        <div class="SearchBar">
+            <input class="SearchInput" type="text"></input>
+            <button class="SearchBtn">Search</button>
+            <div class="Result">
+                <label for="Result">Here is your result!</label>
+            </div>
+            
+        </div>
+
+        <div class="FormularInput">
+            <h4>Insert information here</h4>
+            <div class="Birthday">
+                <label for="Birthday">Birthday:</label>
+                <SELECT id ="year" name = "yyyy" onchange="change_year(this)">
+                </SELECT>
+                <SELECT  id ="month" name = "mm" onchange="change_month(this)">
+                </SELECT>
+                <SELECT id ="day" name = "dd" >
+                </SELECT>
+            </div>
+            <div class="InputArea">
+                <div class="InputPair">
+                    <label for="Name">Name</label>
+                <input id="1" type="text">
+                </div>
+                <div class="InputPair">
+                    <label for="Surname">Surname</label>
+                    <input id="2" type="text">
+                </div>
+               <div class="InputPair">
+                    <label for="Address">Address</label>
+                    <input id="3" type="text">
+               </div>
+                <div class="InputPair">
+                    <label for="PostCode">PostCode</label>
+                <input id="4" type="text">
+                </div>
+                <div class="InputPair">
+                    <label for="City">City</label>
+                <input id="5" type="text">
+                </div>
+                <div class="InputPair">
+                    <label for="Country">Country</label>
+                    <input id="6" type="text">
+                </div>
+                
+                <button class="Enter">Add</button>
+                <button class="Delete">Delete</button>
+
+            </div>
+        </div>
+    </body>
+</html>
