@@ -7,10 +7,10 @@
 
     <body>
         <div class="SearchBar">
-            <input class="SearchInput" type="text"></input>
-            <button class="SearchBtn">Search</button>
-            <div class="Result">
-                <label for="Result">Here is your result!</label>
+            <input id="SearchInputId" class="SearchInput" type="text"></input>
+            <button class="SearchBtn" type="button" onclick="changeSearchText()">Search</button>
+            <div class="ResultContainer">
+                <label id="Result" onmouseover="doingStuffOnHover()">Here your Text</label>
             </div>
             
         </div>
@@ -20,16 +20,19 @@
             <div class="Birthday">
                 <label for="Birthday">Birthday:</label>
                 <SELECT id ="year" name = "yyyy" onchange="change_year(this)">
+                    <option value="year">year</option>
                 </SELECT>
                 <SELECT  id ="month" name = "mm" onchange="change_month(this)">
+                    <option value="month">month</option>
                 </SELECT>
                 <SELECT id ="day" name = "dd" >
+                    <option value="day">day</option>
                 </SELECT>
             </div>
             <div class="InputArea">
                 <div class="InputPair">
                     <label for="Name">Name</label>
-                <input id="1" type="text">
+                <input id="1" type="text"></input>
                 </div>
                 <div class="InputPair">
                     <label for="Surname">Surname</label>
@@ -52,10 +55,11 @@
                     <input id="6" type="text">
                 </div>
                 
-                <button class="Enter">Add</button>
+                <button class="Enter" type="button" onclick="clearFields()">Add</button>
                 <button class="Delete">Delete</button>
 
             </div>
         </div>
     </body>
+    <script src="functionality.js"></script>
 </html>

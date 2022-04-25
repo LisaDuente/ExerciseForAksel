@@ -14,7 +14,7 @@ body{
     float: center;
 }
 
-.SearchBar .Result{
+.SearchBar .ResultContainer{
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
